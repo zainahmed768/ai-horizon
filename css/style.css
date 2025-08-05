@@ -180,4 +180,10 @@
 }
 /* ai audit ends here */
 /* ai-solution-sec starts here*/
+.ai-solution-sec {
+  background-image: url("../img/ai-sol-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
 /* ai-solution-sec ends here*/

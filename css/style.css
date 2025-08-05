@@ -1,0 +1,183 @@
+/* materials icon starts here */
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+/* materials icon ends here */
+/* button starts here */
+.hero-form .btn-orange {
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    #ff8600,
+    #ff9300,
+    #ffa000,
+    #ffad00,
+    #ffb900
+  );
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 16px 0;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+.btn-orange {
+  background-image: linear-gradient(
+    to right,
+    #ff8600,
+    #ff9300,
+    #ffa000,
+    #ffad00,
+    #ffb900
+  );
+  border: none;
+  border-radius: 8px;
+  padding: 14px 24px;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+  cursor: pointer;
+}
+/* button ends here */
+/* banner starts here */
+.banner-sec {
+  background-image: url("../img/banner-img.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 150px 0px;
+}
+.banner-sec .banner-form-wrapper label {
+  color: #8f8f8f;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+.banner-form-wrapper .form-control {
+  height: 41px;
+}
+.banner-form-heading-wrapper h2 {
+  font-size: 32px;
+  color: #1e1e1e;
+}
+.banner-form-wrapper {
+  border-radius: 12px;
+  box-shadow: -6px 6px 10px 8px #026ec6f0;
+}
+.gradient-text {
+  font-size: 55px !important;
+  background: linear-gradient(to right, #026ec6, #65d7ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.banner-sec button.btn.btn-orange span.txt {
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.hero-form button.btn.btn-orange {
+  border-radius: 6px;
+  box-shadow: 2px 2px 0px 3px #000000;
+}
+/* banner ends here */
+/* brand starts here */
+.brand-sec {
+  background-color: #1f1f1f;
+  padding: 10px 0px;
+}
+.brands-slider img {
+  max-height: 60px;
+  object-fit: contain;
+  margin: 0 auto;
+  padding: 10px;
+}
+/* brand ends here */
+/* ai audit starts here */
+.ai-audit-sec {
+  background-image: url("../img/ai-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 100px 0px;
+}
+.ai-audit-accordian-wrapper .accordion-item {
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+.ai-audit-accordian-wrapper .accordion-item button {
+  border-radius: 10px;
+  background-color: #65d7ff;
+}
+.ai-audit-accordian-wrapper .accordion-item button span.count {
+  font-weight: 600;
+  font-size: 22px;
+  color: #000000;
+}
+.ai-audit-accordian-wrapper .accordion-item button span.txt {
+  color: #000019;
+  font-size: 19px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+.ai-audit-accordian-wrapper
+  .accordion-item:first-of-type
+  > .accordion-header
+  .accordion-button {
+  border-radius: 10px;
+}
+.ai-audit-accordian-wrapper
+  .accordion-item:last-of-type
+  > .accordion-header
+  .accordion-button.collapsed {
+  border-radius: 10px;
+}
+.ai-audit-accordian-wrapper .accordion-item .accordion-body {
+  background: #00000091;
+}
+.ai-img-wrapper {
+  background-image: url("../img/ai-col-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  padding: 70px 0px;
+}
+/* ai audit ends here */
+/* ai-solution-sec starts here*/
+/* ai-solution-sec ends here*/

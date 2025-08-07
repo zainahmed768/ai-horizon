@@ -176,7 +176,7 @@
 										type="tel"
 										id="phone"
 										name="phone"
-										class="form-control w-100"
+										class="form-control w-100 phone-input"
 									/>
 								</div>
 								<div class="form-group mt-3">
@@ -596,7 +596,10 @@
 									</figure>
 								</div>
 								<div class="process__content">
-									<h5 class="process__subheading text-dark">Discovery call</h5>
+									<h5 class="process__subheading text-dark">
+										Discovery <br />
+										call
+									</h5>
 									<p class="short__desc desc__wrap">
 										We understand your goals, challenges, and what success looks
 										like for your business.
@@ -617,7 +620,8 @@
 								</div>
 								<div class="process__content">
 									<h5 class="process__subheading text-dark">
-										Business information
+										Business <br />
+										information
 									</h5>
 									<p class="short__desc desc__wrap">
 										Share workflows, tools, and team structure to help us assess
@@ -638,7 +642,10 @@
 									</figure>
 								</div>
 								<div class="process__content">
-									<h5 class="process__subheading text-dark">Audit visit</h5>
+									<h5 class="process__subheading text-dark">
+										Audit <br />
+										visit
+									</h5>
 									<p class="short__desc desc__wrap">
 										Our experts analyze your processes firsthand to uncover
 										inefficiencies and automation potential.
@@ -659,7 +666,8 @@
 								</div>
 								<div class="process__content">
 									<h5 class="process__subheading text-dark">
-										Technical information
+										Technical <br />
+										information
 									</h5>
 									<p class="short__desc desc__wrap">
 										We dive into systems, integrations, and technical setups to
@@ -1131,7 +1139,8 @@
 									<div class="row">
 										<div class="col-md-12">
 											<div class="form-group position-relative has-validation">
-												<span
+												<label for="phone1" class="w-100">
+													<!-- <span
 													class="input-group-text bg-transparent border-0 form-control p-0"
 													id="basic-addon1"
 												>
@@ -1146,7 +1155,15 @@
 														placeholder="+1 (555) 000-0000"
 														required
 													/>
-												</span>
+												</span> -->
+													<input
+														type="tel"
+														name="phone1"
+														class="form-control w-100 phone-input"
+														placeholder="+1 (555) 000-0000"
+														required
+													/>
+												</label>
 												<div class="invalid-feedback">
 													Please provide your Phone Number.
 												</div>
@@ -1259,32 +1276,28 @@
 		// 		"https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
 		// });
 
-		const phoneInput = document.querySelector("#phone");
+		const phoneInputs = document.querySelectorAll(".phone-input");
 
-		const iti = window.intlTelInput(phoneInput, {
-			initialCountry: "auto", // detect user's country automatically
-			nationalMode: false, // ✅ shows full international number with +code
-			formatOnDisplay: true,
-			separateDialCode: false, // ✅ important: keep everything in one field
-			geoIpLookup: function (callback) {
-				fetch("https://ipinfo.io/json?token=YOUR_TOKEN_HERE", {
-					headers: { Accept: "application/json" },
-				})
-					.then((resp) => resp.json())
-					.then((resp) => callback(resp.country))
-					.catch(() => callback("us"));
-			},
-			utilsScript:
-				"https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
-		});
+		phoneInputs.forEach((input) => {
+			const iti = window.intlTelInput(input, {
+				initialCountry: "auto",
+				nationalMode: false,
+				separateDialCode: false,
+				formatOnDisplay: true,
+				geoIpLookup: function (callback) {
+					fetch("https://ipinfo.io/json?token=YOUR_TOKEN_HERE", {
+						headers: { Accept: "application/json" },
+					})
+						.then((resp) => resp.json())
+						.then((resp) => callback(resp.country))
+						.catch(() => callback("us"));
+				},
+				utilsScript:
+					"https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+			});
 
-		// Optional: Get full number on form submit
-		document.querySelector("form")?.addEventListener("submit", function (e) {
-			const fullPhoneNumber = iti.getNumber(); // gives +[code][number]
-			console.log("Full number to submit:", fullPhoneNumber);
-
-			// You can set this value in a hidden field if needed
-			// document.querySelector("#hiddenPhone").value = fullPhoneNumber;
+			// Optional: store the instance if you need it later
+			input._iti = iti;
 		});
 	</script>
 </html>

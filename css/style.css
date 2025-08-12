@@ -1,14 +1,14 @@
 /* materials icon starts here */
-@font-face {
+/* @font-face {
 	font-family: "Material Icons";
 	font-style: normal;
 	font-weight: 400;
-	src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+	src: url(https://example.com/MaterialIcons-Regular.eot); 
 	src: local("Material Icons"), local("MaterialIcons-Regular"),
 		url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
 		url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
 		url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
-}
+} */
 .material-icons {
 	font-family: "Material Icons";
 	font-weight: normal;
@@ -200,6 +200,10 @@ header#top .header-items-wrapper a.header-list-wrapper .header-icon-wrapper i {
 	background-position: center center;
 	padding: 70px 0px;
 }
+.ai-audit-sec .ai-img-wrapper img#dynamicImage {
+	width: 65%;
+	transition: opacity 0.3s ease-in-out;
+}
 /* ai audit ends here */
 /* ai-solution-sec starts here*/
 .ai-solution-sec {
@@ -310,14 +314,14 @@ header#top .header-items-wrapper a.header-list-wrapper .header-icon-wrapper i {
 /* full access starts here */
 .full-access-sec {
 	padding: 80px 0px;
-	background-image: url("../img/ai-bg.png");
+	background-image: url("../img/accordian-bg.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
 }
 .full-access-sec .transparent-text-outline {
-	font-size: 148px;
+	font-size: 138px;
 	color: transparent;
 	-webkit-text-stroke: 1px #65d7ff;
 	text-stroke: 1px #65d7ff;
@@ -325,6 +329,7 @@ header#top .header-items-wrapper a.header-list-wrapper .header-icon-wrapper i {
 	font-family: fantasy;
 	line-height: 1;
 	text-transform: capitalize;
+	opacity: 0.57;
 }
 .full-access-content-wrapper .list-wrapper ul li {
 	display: flex;
@@ -370,8 +375,8 @@ header#top .header-items-wrapper a.header-list-wrapper .header-icon-wrapper i {
 }
 .access-card-wrapper .package-price-wrapper h3 {
 	color: #333333;
-	font-size: 65px;
-	margin: 30px 0px;
+	font-size: 60px;
+	margin: 25px 0px;
 }
 .package-price-wrapper p {
 	color: #5f5f5f;

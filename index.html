@@ -250,7 +250,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row pt-5">
+				<div class="row pt-5 align-items-center">
 					<div class="col-lg-4">
 						<div class="ai-audit-accordian-wrapper">
 							<!-- <div class="ai-audit-heading-wrapepr">
@@ -266,6 +266,7 @@
 											data-bs-target="#collapseOne"
 											aria-expanded="true"
 											aria-controls="collapseOne"
+											data-img="img/faq1.png"
 										>
 											<span class="count">01</span>
 											<span class="txt">Retail & E-Commerce</span>
@@ -307,6 +308,7 @@
 											data-bs-target="#collapseTwo"
 											aria-expanded="false"
 											aria-controls="collapseTwo"
+											data-img="img/faq2.png"
 										>
 											<span class="count">02</span>
 											<span class="txt">Healthcare & Wellness</span>
@@ -348,6 +350,7 @@
 											data-bs-target="#collapseThree"
 											aria-expanded="false"
 											aria-controls="collapseThree"
+											data-img="img/faq3.png"
 										>
 											<span class="count">03</span>
 											<span class="txt">Finance & Fintech</span>
@@ -388,6 +391,7 @@
 											data-bs-target="#collapseFour"
 											aria-expanded="false"
 											aria-controls="collapseFour"
+											data-img="img/faq4.png"
 										>
 											<span class="count">04</span>
 											<span class="txt">Real Estate & Property Management</span>
@@ -433,6 +437,7 @@
 											data-bs-target="#collapseFive"
 											aria-expanded="false"
 											aria-controls="collapseFive"
+											data-img="img/faq5.png"
 										>
 											<span class="count">05</span>
 											<span class="txt">SaaS & Tech</span>
@@ -473,6 +478,7 @@
 											data-bs-target="#collapseSix"
 											aria-expanded="false"
 											aria-controls="collapseSix"
+											data-img="img/faq6.png"
 										>
 											<span class="count">06</span>
 											<span class="txt"
@@ -514,9 +520,20 @@
 						</div>
 					</div>
 					<div class="col-lg-8">
-						<div class="ai-img-wrapper">
+						<div class="ai-img-wrapper text-center">
 							<figure>
-								<img src="img/ai-img.png" class="img-fluid" alt="" />
+								<!-- <img
+									src="img/ai-img.png"
+									id="dynamicImage"
+									class="img-fluid"
+									alt=""
+								/> -->
+								<img
+									src="img/faq1.png"
+									id="dynamicImage"
+									class="img-fluid"
+									alt=""
+								/>
 							</figure>
 						</div>
 					</div>
@@ -1237,6 +1254,27 @@
 	></script>
 	<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
 	<script src="js/index.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const imageElement = document.getElementById("dynamicImage");
+
+			// Listen to collapse "shown" events
+			document.querySelectorAll(".accordion-collapse").forEach((collapse) => {
+				collapse.addEventListener("shown.bs.collapse", function () {
+					// Find the button that triggered this collapse
+					const button = document.querySelector(
+						`[data-bs-target="#${this.id}"]`,
+					);
+					const imgSrc = button.getAttribute("data-img");
+
+					if (imgSrc) {
+						imageElement.src = imgSrc;
+					}
+				});
+			});
+		});
+	</script>
+
 	<script>
 		// Example starter JavaScript for disabling form submissions if there are invalid fields
 		(function () {

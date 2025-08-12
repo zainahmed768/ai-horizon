@@ -145,7 +145,8 @@
 								<div class="form-group row mb-2">
 									<div class="col-xl-6 col-lg-12">
 										<label for="">Company Size</label>
-										<select name="" class="form-control" id="">
+										<select name="" class="form-control form-select" id="">
+											<option value="">Employee count</option>
 											<option value="">Less than 25</option>
 											<option value="">25 - 50</option>
 											<option value="">51-100</option>
@@ -156,7 +157,8 @@
 									</div>
 									<div class="col-xl-6 col-lg-12">
 										<label for="">Company Annual Revenue</label>
-										<select name="" class="form-control" id="">
+										<select name="" class="form-control form-select" id="">
+											<option value="">$0</option>
 											<option value="">$10,000 - $50,000</option>
 											<option value="">$50,000 - $100,000</option>
 											<option value="">$100,000 - $250,000</option>
@@ -702,10 +704,10 @@
 				</div>
 			</div>
 		</section>
-		<section class="full-access-sec">
+		<section class="full-access-sec pt-0">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg-6 pt-5">
 						<div class="full-access-content-wrapper">
 							<div class="full-access-heading-wrapper">
 								<h2>
@@ -841,7 +843,7 @@
 						<div class="limited-txt-wrapper">
 							<h2 class="transparent-text-outline">Limited time offer</h2>
 						</div>
-						<div class="access-card-wrapper mx-auto">
+						<div class="access-card-wrapper ms-5">
 							<div class="package-heading-wrapper my-3">
 								<h5>all in one package</h5>
 							</div>
@@ -1280,7 +1282,7 @@
 
 		phoneInputs.forEach((input) => {
 			const iti = window.intlTelInput(input, {
-				initialCountry: "auto",
+				initialCountry: "ae",
 				nationalMode: false,
 				separateDialCode: false,
 				formatOnDisplay: true,
@@ -1295,8 +1297,6 @@
 				utilsScript:
 					"https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
 			});
-
-			// Optional: store the instance if you need it later
 			input._iti = iti;
 		});
 	</script>

@@ -317,7 +317,7 @@ header#top .header-items-wrapper a.header-list-wrapper .header-icon-wrapper i {
 	background-attachment: fixed;
 }
 .full-access-sec .transparent-text-outline {
-	font-size: 148px;
+	font-size: 138px;
 	color: transparent;
 	-webkit-text-stroke: 1px #65d7ff;
 	text-stroke: 1px #65d7ff;
@@ -325,6 +325,7 @@ header#top .header-items-wrapper a.header-list-wrapper .header-icon-wrapper i {
 	font-family: fantasy;
 	line-height: 1;
 	text-transform: capitalize;
+	opacity: 0.57;
 }
 .full-access-content-wrapper .list-wrapper ul li {
 	display: flex;
@@ -370,8 +371,8 @@ header#top .header-items-wrapper a.header-list-wrapper .header-icon-wrapper i {
 }
 .access-card-wrapper .package-price-wrapper h3 {
 	color: #333333;
-	font-size: 65px;
-	margin: 30px 0px;
+	font-size: 60px;
+	margin: 25px 0px;
 }
 .package-price-wrapper p {
 	color: #5f5f5f;

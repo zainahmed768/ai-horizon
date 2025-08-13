@@ -1,1019 +1,1019 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Horizon - Free AI Audit</title>
-    <link rel="stylesheet" href="sass/main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!-- Slick CSS -->
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css"
-    />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>AI Horizon - Free AI Audit</title>
+		<link rel="stylesheet" href="sass/main.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<!-- Slick CSS -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+		/>
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.min.css"
+		/>
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- Loader -->
-    <div class="loader-container">
-      <svg viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="15" cy="15" r="8" fill="#3b82f6">
-          <animate
-            attributeName="cy"
-            values="15;7;15;15"
-            dur="1.6s"
-            keyTimes="0;0.3;0.6;1"
-            keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"
-            calcMode="spline"
-            repeatCount="indefinite"
-            begin="0s"
-          />
-          <animate
-            attributeName="ry"
-            values="8;8;6;8"
-            dur="1.6s"
-            keyTimes="0;0.3;0.6;1"
-            repeatCount="indefinite"
-            begin="0s"
-          />
-          <animate
-            attributeName="rx"
-            values="8;8;9;8"
-            dur="1.6s"
-            keyTimes="0;0.3;0.6;1"
-            repeatCount="indefinite"
-            begin="0s"
-          />
-          <animate
-            attributeName="fill"
-            values="#3b82f6;#6366f1;#8b5cf6;#3b82f6"
-            dur="1.6s"
-            repeatCount="indefinite"
-            begin="0s"
-          />
-        </circle>
-        <circle cx="45" cy="15" r="8" fill="#3b82f6">
-          <animate
-            attributeName="cy"
-            values="15;7;15;15"
-            dur="1.6s"
-            keyTimes="0;0.3;0.6;1"
-            keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"
-            calcMode="spline"
-            repeatCount="indefinite"
-            begin="0.4s"
-          />
-          <animate
-            attributeName="ry"
-            values="8;8;6;8"
-            dur="1.6s"
-            keyTimes="0;0.3;0.6;1"
-            repeatCount="indefinite"
-            begin="0.4s"
-          />
-          <animate
-            attributeName="rx"
-            values="8;8;9;8"
-            dur="1.6s"
-            keyTimes="0;0.3;0.6;1"
-            repeatCount="indefinite"
-            begin="0.4s"
-          />
-          <animate
-            attributeName="fill"
-            values="#3b82f6;#6366f1;#8b5cf6;#3b82f6"
-            dur="1.6s"
-            repeatCount="indefinite"
-            begin="0.4s"
-          />
-        </circle>
-        <circle cx="75" cy="15" r="8" fill="#3b82f6">
-          <animate
-            attributeName="cy"
-            values="15;7;15;15"
-            dur="1.6s"
-            keyTimes="0;0.3;0.6;1"
-            keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"
-            calcMode="spline"
-            repeatCount="indefinite"
-            begin="0.8s"
-          />
-          <animate
-            attributeName="ry"
-            values="8;8;6;8"
-            dur="1.6s"
-            keyTimes="0;0.3;0.6;1"
-            repeatCount="indefinite"
-            begin="0.8s"
-          />
-          <animate
-            attributeName="rx"
-            values="8;8;9;8"
-            dur="1.6s"
-            keyTimes="0;0.3;0.6;1"
-            repeatCount="indefinite"
-            begin="0.8s"
-          />
-          <animate
-            attributeName="fill"
-            values="#3b82f6;#6366f1;#8b5cf6;#3b82f6"
-            dur="1.6s"
-            repeatCount="indefinite"
-            begin="0.8s"
-          />
-        </circle>
-      </svg>
-    </div>
-    <header id="top">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-6">
-            <div class="header-logo-wrapper">
-              <a href="#">
-                <img src="img/logo-horizon.png" class="img-fluid" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="col-xxl-2 col-lg-1 d-lg-flex d-none"></div>
-          <div class="col-xxl-6 col-lg-7 col-6">
-            <div class="header-items-wrapper">
-              <ul
-                class="list-unstyled d-flex gap-2 justify-content-lg-between justify-content-end align-items-center"
-              >
-                <li>
-                  <a
-                    href="#"
-                    class="btn btn-orange text-white text-capitalized d-flex gap-2 align-items-center"
-                  >
-                    <span class="txt">live chat</span>
-                    <i class="material-icons">arrow_forward_ios</i>
-                  </a>
-                </li>
-                <li class="d-lg-flex d-none">
-                  <a
-                    class="header-list-wrapper text-white text-decoration-none d-flex gap-2 align-items-center"
-                  >
-                    <div class="header-icon-wrapper">
-                      <i class="material-icons">local_post_office</i>
-                    </div>
-                    <div class="header-list-name-wrapper">
-                      <span class="txt">queries@aihorizonllc.com</span>
-                    </div>
-                  </a>
-                </li>
-                <li class="d-lg-flex d-none">
-                  <a
-                    class="header-list-wrapper text-white text-decoration-none d-flex gap-2 align-items-center"
-                  >
-                    <div class="header-icon-wrapper">
-                      <i class="material-icons">phone</i>
-                    </div>
-                    <div class="header-list-name-wrapper">
-                      <span class="txt">+971 - 4 - 834 - 9024</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <section class="banner-sec">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <div class="banner-heading-wrapper mt-lg-5 pt-lg-5">
-              <h1>
-                Cut 100+ Hours of Manual Work
-                <span class="text-info">with One Free Audit</span>
-              </h1>
-            </div>
-            <div class="banner-content-wrapper mt-3">
-              <p class="text-white">
-                Our AI Experts reviews your digital setup, spots inefficiencies,
-                and gives you a clear plan to save time and cut costs:
-              </p>
-              <ul class="text-white">
-                <li>Quick results and detailed reports</li>
-                <li>Covers tech, workflows, and operations</li>
-                <li>Quick results and detailed reports</li>
-              </ul>
-            </div>
-            <div class="banner-btn-wrapper mt-3">
-              <a href="#" class="btn btn-orange text-white"
-                >Start My Free Audit</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-2"></div>
-          <div class="col-lg-5">
-            <div class="banner-form-wrapper bg-white p-4 mt-lg-0 mt-4">
-              <div class="banner-form-heading-wrapper text-center">
-                <h2>
-                  Let's Discuss Your
-                  <span class="gradient-text d-block">PROJECT</span>
-                </h2>
-              </div>
-              <form action="">
-                <div class="form-group row mb-2">
-                  <div class="col-lg-6">
-                    <label for="">First Name</label>
-                    <input type="text" class="form-control" />
-                  </div>
-                  <div class="col-lg-6">
-                    <label for="">Last Name</label>
-                    <input type="text" class="form-control" />
-                  </div>
-                </div>
-                <div class="form-group mb-2">
-                  <label for="">Company Name</label>
-                  <input type="text" class="form-control" />
-                </div>
-                <div class="form-group row mb-2">
-                  <div class="col-xl-6 col-lg-12">
-                    <label for="">Company Size</label>
-                    <select name="" class="form-control form-select" id="">
-                      <!-- <option value="">Employee count</option> -->
-                      <option value="">Less than 25</option>
-                      <option value="">25 - 50</option>
-                      <option value="">51-100</option>
-                      <option value="">101 - 500</option>
-                      <option value="">501 - 1000</option>
-                      <option value="">More than thousand</option>
-                    </select>
-                  </div>
-                  <div class="col-xl-6 col-lg-12">
-                    <label for="">Company Annual Revenue</label>
-                    <select name="" class="form-control form-select" id="">
-                      <!-- <option value="">$0</option> -->
-                      <option value="">$10,000 - $50,000</option>
-                      <option value="">$50,000 - $100,000</option>
-                      <option value="">$100,000 - $250,000</option>
-                      <option value="">$250,000 - $500,000</option>
-                      <option value="">$500,000 - $1,000,000</option>
-                      <option value="">$1,000,000 - $5,000,000</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="form-group mb-2">
-                  <label for="">Work Email Address</label>
-                  <input type="email" class="form-control" />
-                </div>
-                <div class="form-group mb-2">
-                  <label for="phone">Phone Number</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    class="form-control w-100 phone-input"
-                  />
-                </div>
-                <div class="form-group mt-3">
-                  <div class="hero-form">
-                    <button
-                      class="btn btn-orange d-flex align-items-center gap-2 justify-content-center"
-                    >
-                      <span class="txt">Get A Free Quote</span>
-                      <i class="material-icons">arrow_forward_ios</i>
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="brand-sec">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="brands-slider d-flex align-items-baseline">
-              <img src="img/logos/Atlassian.png" alt="Atlassian" />
-              <img src="img/logos/swisscom.png" alt="Swisscom" />
-              <img src="img/logos/codio.png" alt="Codio" />
-              <img src="img/logos/google.png" alt="Google" />
-              <img src="img/logos/Indeed_logo 1.png" alt="Indeed" />
-              <img src="img/logos/mytaxi.png" alt="mytaxi" />
-              <img src="img/logos/wayne.png" alt="Wayne" />
-              <img src="img/logos/AT&T_logo.png" alt="AT&T" />
-              <img src="img/logos/2park.png" alt="2PARK" />
-              <img src="img/logos/motion.png" alt="MOTION INDUSTRIE" />
-              <img src="img/logos/Atlassian.png" alt="Atlassian" />
-              <img src="img/logos/swisscom.png" alt="Swisscom" />
-              <img src="img/logos/codio.png" alt="Codio" />
-              <img src="img/logos/google.png" alt="Google" />
-              <img src="img/logos/Indeed_logo 1.png" alt="Indeed" />
-              <img src="img/logos/mytaxi.png" alt="mytaxi" />
-              <img src="img/logos/wayne.png" alt="Wayne" />
-              <img src="img/logos/AT&T_logo.png" alt="AT&T" />
-              <img src="img/logos/2park.png" alt="2PARK" />
-              <img src="img/logos/motion.png" alt="MOTION INDUSTRIE" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="ai-audit-sec position-relative pb-0 pb-lg-5">
-      <div class="ai-ring-wrapper">
-        <figure class="mb-0">
-          <img src="img/ai-ring.png" class="img-fluid" alt="" />
-        </figure>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-3 col-lg-2"></div>
-          <div class="col-xl-6 col-lg-8">
-            <div class="ai-audit-heading-wrapper text-center">
-              <h2>
-                See What Our Free
-                <span class="text-info">AI Audit Covers</span> for Your Industry
-              </h2>
-              <p class="text-white">
-                From retail to real estate, our AI expert scans your workflows,
-                identifying functions which can be automated. Save time, reduce
-                costs, and improve how your business runs.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row pt-5 align-items-center">
-          <div class="col-lg-4">
-            <div class="ai-audit-accordian-wrapper">
-              <!-- <div class="ai-audit-heading-wrapepr">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!-- Loader -->
+		<div class="loader-container">
+			<svg viewBox="0 0 120 30" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="15" cy="15" r="8" fill="#3b82f6">
+					<animate
+						attributeName="cy"
+						values="15;7;15;15"
+						dur="1.6s"
+						keyTimes="0;0.3;0.6;1"
+						keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"
+						calcMode="spline"
+						repeatCount="indefinite"
+						begin="0s"
+					/>
+					<animate
+						attributeName="ry"
+						values="8;8;6;8"
+						dur="1.6s"
+						keyTimes="0;0.3;0.6;1"
+						repeatCount="indefinite"
+						begin="0s"
+					/>
+					<animate
+						attributeName="rx"
+						values="8;8;9;8"
+						dur="1.6s"
+						keyTimes="0;0.3;0.6;1"
+						repeatCount="indefinite"
+						begin="0s"
+					/>
+					<animate
+						attributeName="fill"
+						values="#3b82f6;#6366f1;#8b5cf6;#3b82f6"
+						dur="1.6s"
+						repeatCount="indefinite"
+						begin="0s"
+					/>
+				</circle>
+				<circle cx="45" cy="15" r="8" fill="#3b82f6">
+					<animate
+						attributeName="cy"
+						values="15;7;15;15"
+						dur="1.6s"
+						keyTimes="0;0.3;0.6;1"
+						keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"
+						calcMode="spline"
+						repeatCount="indefinite"
+						begin="0.4s"
+					/>
+					<animate
+						attributeName="ry"
+						values="8;8;6;8"
+						dur="1.6s"
+						keyTimes="0;0.3;0.6;1"
+						repeatCount="indefinite"
+						begin="0.4s"
+					/>
+					<animate
+						attributeName="rx"
+						values="8;8;9;8"
+						dur="1.6s"
+						keyTimes="0;0.3;0.6;1"
+						repeatCount="indefinite"
+						begin="0.4s"
+					/>
+					<animate
+						attributeName="fill"
+						values="#3b82f6;#6366f1;#8b5cf6;#3b82f6"
+						dur="1.6s"
+						repeatCount="indefinite"
+						begin="0.4s"
+					/>
+				</circle>
+				<circle cx="75" cy="15" r="8" fill="#3b82f6">
+					<animate
+						attributeName="cy"
+						values="15;7;15;15"
+						dur="1.6s"
+						keyTimes="0;0.3;0.6;1"
+						keySplines="0.42 0 0.58 1; 0.42 0 0.58 1; 0.42 0 0.58 1"
+						calcMode="spline"
+						repeatCount="indefinite"
+						begin="0.8s"
+					/>
+					<animate
+						attributeName="ry"
+						values="8;8;6;8"
+						dur="1.6s"
+						keyTimes="0;0.3;0.6;1"
+						repeatCount="indefinite"
+						begin="0.8s"
+					/>
+					<animate
+						attributeName="rx"
+						values="8;8;9;8"
+						dur="1.6s"
+						keyTimes="0;0.3;0.6;1"
+						repeatCount="indefinite"
+						begin="0.8s"
+					/>
+					<animate
+						attributeName="fill"
+						values="#3b82f6;#6366f1;#8b5cf6;#3b82f6"
+						dur="1.6s"
+						repeatCount="indefinite"
+						begin="0.8s"
+					/>
+				</circle>
+			</svg>
+		</div>
+		<header id="top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-6">
+						<div class="header-logo-wrapper">
+							<a href="#">
+								<img src="img/logo-horizon.webp" class="img-fluid" alt="" />
+							</a>
+						</div>
+					</div>
+					<div class="col-xxl-2 col-lg-1 d-lg-flex d-none"></div>
+					<div class="col-xxl-6 col-lg-7 col-6">
+						<div class="header-items-wrapper">
+							<ul
+								class="list-unstyled d-flex gap-2 justify-content-lg-between justify-content-end align-items-center"
+							>
+								<li>
+									<a
+										href="#"
+										class="btn btn-orange text-white text-capitalized d-flex gap-2 align-items-center"
+									>
+										<span class="txt">live chat</span>
+										<i class="material-icons">arrow_forward_ios</i>
+									</a>
+								</li>
+								<li class="d-lg-flex d-none">
+									<a
+										class="header-list-wrapper text-white text-decoration-none d-flex gap-2 align-items-center"
+									>
+										<div class="header-icon-wrapper">
+											<i class="material-icons">local_post_office</i>
+										</div>
+										<div class="header-list-name-wrapper">
+											<span class="txt">queries@aihorizonllc.com</span>
+										</div>
+									</a>
+								</li>
+								<li class="d-lg-flex d-none">
+									<a
+										class="header-list-wrapper text-white text-decoration-none d-flex gap-2 align-items-center"
+									>
+										<div class="header-icon-wrapper">
+											<i class="material-icons">phone</i>
+										</div>
+										<div class="header-list-name-wrapper">
+											<span class="txt">+971 - 4 - 834 - 9024</span>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="banner-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5">
+						<div class="banner-heading-wrapper mt-lg-5 pt-lg-5">
+							<h1>
+								Cut 100+ Hours of Manual Work
+								<span class="text-info">with One Free Audit</span>
+							</h1>
+						</div>
+						<div class="banner-content-wrapper mt-3">
+							<p class="text-white">
+								Our AI Experts reviews your digital setup, spots inefficiencies,
+								and gives you a clear plan to save time and cut costs:
+							</p>
+							<ul class="text-white">
+								<li>Quick results and detailed reports</li>
+								<li>Covers tech, workflows, and operations</li>
+								<li>Quick results and detailed reports</li>
+							</ul>
+						</div>
+						<div class="banner-btn-wrapper mt-3">
+							<a href="#" class="btn btn-orange text-white"
+								>Start My Free Audit</a
+							>
+						</div>
+					</div>
+					<div class="col-lg-2"></div>
+					<div class="col-lg-5">
+						<div class="banner-form-wrapper bg-white p-4 mt-lg-0 mt-4">
+							<div class="banner-form-heading-wrapper text-center">
+								<h2>
+									Let's Discuss Your
+									<span class="gradient-text d-block">PROJECT</span>
+								</h2>
+							</div>
+							<form action="">
+								<div class="form-group row mb-2">
+									<div class="col-lg-6">
+										<label for="">First Name</label>
+										<input type="text" class="form-control" />
+									</div>
+									<div class="col-lg-6">
+										<label for="">Last Name</label>
+										<input type="text" class="form-control" />
+									</div>
+								</div>
+								<div class="form-group mb-2">
+									<label for="">Company Name</label>
+									<input type="text" class="form-control" />
+								</div>
+								<div class="form-group row mb-2">
+									<div class="col-xl-6 col-lg-12">
+										<label for="">Company Size</label>
+										<select name="" class="form-control form-select" id="">
+											<option value="">please select</option>
+											<option value="">Less than 25</option>
+											<option value="">25 - 50</option>
+											<option value="">51-100</option>
+											<option value="">101 - 500</option>
+											<option value="">501 - 1000</option>
+											<option value="">More than thousand</option>
+										</select>
+									</div>
+									<div class="col-xl-6 col-lg-12">
+										<label for="">Company Annual Revenue</label>
+										<select name="" class="form-control form-select" id="">
+											<option value="">please select</option>
+											<option value="">$10,000 - $50,000</option>
+											<option value="">$50,000 - $100,000</option>
+											<option value="">$100,000 - $250,000</option>
+											<option value="">$250,000 - $500,000</option>
+											<option value="">$500,000 - $1,000,000</option>
+											<option value="">$1,000,000 - $5,000,000</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group mb-2">
+									<label for="">Work Email Address</label>
+									<input type="email" class="form-control" />
+								</div>
+								<div class="form-group mb-2">
+									<label for="phone">Phone Number</label>
+									<input
+										type="tel"
+										id="phone"
+										name="phone"
+										class="form-control w-100 phone-input"
+									/>
+								</div>
+								<div class="form-group mt-3">
+									<div class="hero-form">
+										<button
+											class="btn btn-orange d-flex align-items-center gap-2 justify-content-center"
+										>
+											<span class="txt">Get A Free Quote</span>
+											<i class="material-icons">arrow_forward_ios</i>
+										</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="brand-sec">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="brands-slider d-flex align-items-baseline">
+							<img src="img/logos/Atlassian.webp" alt="Atlassian" />
+							<img src="img/logos/swisscom.webp" alt="Swisscom" />
+							<img src="img/logos/codio.webp" alt="Codio" />
+							<img src="img/logos/google.webp" alt="Google" />
+							<img src="img/logos/Indeed_logo 1.webp" alt="Indeed" />
+							<img src="img/logos/mytaxi.webp" alt="mytaxi" />
+							<img src="img/logos/wayne.webp" alt="Wayne" />
+							<img src="img/logos/AT&T_logo.webp" alt="AT&T" />
+							<img src="img/logos/2park.webp" alt="2PARK" />
+							<img src="img/logos/motion.webp" alt="MOTION INDUSTRIE" />
+							<img src="img/logos/Atlassian.webp" alt="Atlassian" />
+							<img src="img/logos/swisscom.webp" alt="Swisscom" />
+							<img src="img/logos/codio.webp" alt="Codio" />
+							<img src="img/logos/google.webp" alt="Google" />
+							<img src="img/logos/Indeed_logo 1.webp" alt="Indeed" />
+							<img src="img/logos/mytaxi.webp" alt="mytaxi" />
+							<img src="img/logos/wayne.webp" alt="Wayne" />
+							<img src="img/logos/AT&T_logo.webp" alt="AT&T" />
+							<img src="img/logos/2park.webp" alt="2PARK" />
+							<img src="img/logos/motion.webp" alt="MOTION INDUSTRIE" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ai-audit-sec position-relative pb-0 pb-lg-5">
+			<div class="ai-ring-wrapper">
+				<figure class="mb-0">
+					<img src="img/ai-ring.webp" class="img-fluid" alt="" />
+				</figure>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-3 col-lg-2"></div>
+					<div class="col-xl-6 col-lg-8">
+						<div class="ai-audit-heading-wrapper text-center">
+							<h2>
+								See What Our Free
+								<span class="text-info">AI Audit Covers</span> for Your Industry
+							</h2>
+							<p class="text-white">
+								From retail to real estate, our AI expert scans your workflows,
+								identifying functions which can be automated. Save time, reduce
+								costs, and improve how your business runs.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row pt-5 align-items-center">
+					<div class="col-lg-4">
+						<div class="ai-audit-accordian-wrapper">
+							<!-- <div class="ai-audit-heading-wrapepr">
 								<h3>IT Consulting Services</h3>
 							</div> -->
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                      data-img="img/faq1.png"
-                    >
-                      <span class="count">01</span>
-                      <span class="txt">Retail & E-Commerce</span>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <div class="faq-content-wrapper">
-                        <ul class="text-white">
-                          <li>
-                            Automate product tagging, recommendations, and
-                            customer support
-                          </li>
-                          <li>
-                            Identify gaps in abandoned cart recovery and
-                            upselling flows
-                          </li>
-                          <li>
-                            Audit marketing automation across email and ad
-                            channels
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+							<div class="accordion" id="accordionExample">
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingOne">
+										<button
+											class="accordion-button"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseOne"
+											aria-expanded="true"
+											aria-controls="collapseOne"
+											data-img="img/faq1.webp"
+										>
+											<span class="count">01</span>
+											<span class="txt">Retail & E-Commerce</span>
+										</button>
+									</h2>
+									<div
+										id="collapseOne"
+										class="accordion-collapse collapse show"
+										aria-labelledby="headingOne"
+										data-bs-parent="#accordionExample"
+									>
+										<div class="accordion-body">
+											<div class="faq-content-wrapper">
+												<ul class="text-white">
+													<li>
+														Automate product tagging, recommendations, and
+														customer support
+													</li>
+													<li>
+														Identify gaps in abandoned cart recovery and
+														upselling flows
+													</li>
+													<li>
+														Audit marketing automation across email and ad
+														channels
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                      data-img="img/faq2.png"
-                    >
-                      <span class="count">02</span>
-                      <span class="txt">Healthcare & Wellness</span>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <div class="faq-content-wrapper">
-                        <ul class="text-white">
-                          <li>
-                            Review patient onboarding and follow-up workflows
-                            for automation
-                          </li>
-                          <li>
-                            Spot opportunities for AI-driven scheduling and
-                            reminders
-                          </li>
-                          <li>
-                            Assess data flows for compliance and reporting
-                            automation
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingTwo">
+										<button
+											class="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseTwo"
+											aria-expanded="false"
+											aria-controls="collapseTwo"
+											data-img="img/faq2.webp"
+										>
+											<span class="count">02</span>
+											<span class="txt">Healthcare & Wellness</span>
+										</button>
+									</h2>
+									<div
+										id="collapseTwo"
+										class="accordion-collapse collapse"
+										aria-labelledby="headingTwo"
+										data-bs-parent="#accordionExample"
+									>
+										<div class="accordion-body">
+											<div class="faq-content-wrapper">
+												<ul class="text-white">
+													<li>
+														Review patient onboarding and follow-up workflows
+														for automation
+													</li>
+													<li>
+														Spot opportunities for AI-driven scheduling and
+														reminders
+													</li>
+													<li>
+														Assess data flows for compliance and reporting
+														automation
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                      data-img="img/faq3.png"
-                    >
-                      <span class="count">03</span>
-                      <span class="txt">Finance & Fintech</span>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <div class="faq-content-wrapper">
-                        <ul class="text-white">
-                          <li>
-                            Audit client onboarding, KYC, and transaction flows
-                          </li>
-                          <li>
-                            Recommend AI tools for fraud detection and financial
-                            insights
-                          </li>
-                          <li>
-                            Evaluate reporting, alerts, and portfolio management
-                            automation
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingThree">
+										<button
+											class="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseThree"
+											aria-expanded="false"
+											aria-controls="collapseThree"
+											data-img="img/faq3.webp"
+										>
+											<span class="count">03</span>
+											<span class="txt">Finance & Fintech</span>
+										</button>
+									</h2>
+									<div
+										id="collapseThree"
+										class="accordion-collapse collapse"
+										aria-labelledby="headingThree"
+										data-bs-parent="#accordionExample"
+									>
+										<div class="accordion-body">
+											<div class="faq-content-wrapper">
+												<ul class="text-white">
+													<li>
+														Audit client onboarding, KYC, and transaction flows
+													</li>
+													<li>
+														Recommend AI tools for fraud detection and financial
+														insights
+													</li>
+													<li>
+														Evaluate reporting, alerts, and portfolio management
+														automation
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFour">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
-                      data-img="img/faq4.png"
-                    >
-                      <span class="count">04</span>
-                      <span class="txt">Real Estate & Property Management</span>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFour"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingFour"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <div class="faq-content-wrapper">
-                        <ul class="text-white">
-                          <li>
-                            Identify automation gaps in lead handling and client
-                            follow-ups
-                          </li>
-                          <li>
-                            Assess CRM use for property tracking and deal
-                            workflows
-                          </li>
-                          <li>
-                            Recommend AI assistants for tenant communication and
-                            scheduling
-                          </li>
-                          <li>
-                            Enable instant call workflows to make 100+
-                            follow-ups automatically
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingFour">
+										<button
+											class="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseFour"
+											aria-expanded="false"
+											aria-controls="collapseFour"
+											data-img="img/faq4.webp"
+										>
+											<span class="count">04</span>
+											<span class="txt">Real Estate & Property Management</span>
+										</button>
+									</h2>
+									<div
+										id="collapseFour"
+										class="accordion-collapse collapse"
+										aria-labelledby="headingFour"
+										data-bs-parent="#accordionExample"
+									>
+										<div class="accordion-body">
+											<div class="faq-content-wrapper">
+												<ul class="text-white">
+													<li>
+														Identify automation gaps in lead handling and client
+														follow-ups
+													</li>
+													<li>
+														Assess CRM use for property tracking and deal
+														workflows
+													</li>
+													<li>
+														Recommend AI assistants for tenant communication and
+														scheduling
+													</li>
+													<li>
+														Enable instant call workflows to make 100+
+														follow-ups automatically
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
 
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFive">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFive"
-                      aria-expanded="false"
-                      aria-controls="collapseFive"
-                      data-img="img/faq5.png"
-                    >
-                      <span class="count">05</span>
-                      <span class="txt">SaaS & Tech</span>
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFive"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingFive"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <div class="faq-content-wrapper">
-                        <ul class="text-white">
-                          <li>
-                            Review product usage data for AI-based onboarding
-                            and retention
-                          </li>
-                          <li>
-                            Evaluate support ticket handling for AI chatbot
-                            integration
-                          </li>
-                          <li>
-                            Suggest automation for product feedback and usage
-                            alerts
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingSix">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseSix"
-                      aria-expanded="false"
-                      aria-controls="collapseSix"
-                      data-img="img/faq6.png"
-                    >
-                      <span class="count">06</span>
-                      <span class="txt"
-                        >Professional Services
-                        <b> (Agencies, Legal, Consulting)</b></span
-                      >
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseSix"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingSix"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <div class="faq-content-wrapper">
-                        <ul class="text-white">
-                          <li>
-                            Spot repetitive client onboarding, invoicing, or
-                            reporting tasks
-                          </li>
-                          <li>
-                            Recommend AI workflows for document generation and
-                            analysis
-                          </li>
-                          <li>
-                            Evaluate CRM and project tracking automation
-                            opportunities
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="ai-audit-button-wrapper">
-                <a href="#" class="btn btn-orange w-100 text-dark">Many More</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="ai-img-wrapper text-center">
-              <figure>
-                <!-- <img
-									src="img/ai-img.png"
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingFive">
+										<button
+											class="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseFive"
+											aria-expanded="false"
+											aria-controls="collapseFive"
+											data-img="img/faq5.webp"
+										>
+											<span class="count">05</span>
+											<span class="txt">SaaS & Tech</span>
+										</button>
+									</h2>
+									<div
+										id="collapseFive"
+										class="accordion-collapse collapse"
+										aria-labelledby="headingFive"
+										data-bs-parent="#accordionExample"
+									>
+										<div class="accordion-body">
+											<div class="faq-content-wrapper">
+												<ul class="text-white">
+													<li>
+														Review product usage data for AI-based onboarding
+														and retention
+													</li>
+													<li>
+														Evaluate support ticket handling for AI chatbot
+														integration
+													</li>
+													<li>
+														Suggest automation for product feedback and usage
+														alerts
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item">
+									<h2 class="accordion-header" id="headingSix">
+										<button
+											class="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseSix"
+											aria-expanded="false"
+											aria-controls="collapseSix"
+											data-img="img/faq6.webp"
+										>
+											<span class="count">06</span>
+											<span class="txt"
+												>Professional Services
+												<b> (Agencies, Legal, Consulting)</b></span
+											>
+										</button>
+									</h2>
+									<div
+										id="collapseSix"
+										class="accordion-collapse collapse"
+										aria-labelledby="headingSix"
+										data-bs-parent="#accordionExample"
+									>
+										<div class="accordion-body">
+											<div class="faq-content-wrapper">
+												<ul class="text-white">
+													<li>
+														Spot repetitive client onboarding, invoicing, or
+														reporting tasks
+													</li>
+													<li>
+														Recommend AI workflows for document generation and
+														analysis
+													</li>
+													<li>
+														Evaluate CRM and project tracking automation
+														opportunities
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ai-audit-button-wrapper">
+								<a href="#" class="btn btn-orange w-100 text-dark">Many More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8">
+						<div class="ai-img-wrapper text-center">
+							<figure>
+								<!-- <img
+									src="img/ai-img.webp"
 									id="dynamicImage"
 									class="img-fluid"
 									alt=""
 								/> -->
-                <img
-                  src="img/faq1.png"
-                  id="dynamicImage"
-                  class="img-fluid"
-                  alt=""
-                />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="ai-solution-sec">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-5 col-md-6">
-            <div class="ai-solution-col-wrapper">
-              <div class="ai-solution-heading-wrapper">
-                <h3>
-                  Didn’t Find What You Need? Let’s Talk AI Solutions for Your
-                  Business
-                </h3>
-              </div>
-              <div class="ai-content-wrapper">
-                <p class="text-white">
-                  Our experts will guide you on how AI can remove repetitive
-                  work, improve accuracy, and save resources. Get personalized
-                  advice for your industry.
-                </p>
-              </div>
-              <div class="ai-solition-btn-wrapper">
-                <a href="tel:+971-0-000-0000" class="btn btn-orange text-white">
-                  <span class="txt"> Request My Free AI Audit</span>
-                  <i class="material-icons">arrow_forward_ios</i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-1 d-lg-flex d-none"></div>
-          <div class="col-lg-6 col-md-6">
-            <div class="ai-sol-img-wrapper">
-              <figure>
-                <img src="img/solution-img.png" class="img-fluid" alt="" />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="process-section py-sm-5 py-3">
-      <div class="container">
-        <div class="process__main__wrapper">
-          <div
-            class="process__top__wrapper d-flex align-items-center justify-content-between"
-          >
-            <div class="process__heading">
-              <h2 class="top__heading text-dark">
-                Website <br />
-                Development
-                <span class="gradient__color"> Process </span>
-              </h2>
-            </div>
-            <div class="process__desc">
-              <p class="long__desc desc__wrap">
-                Pacific, as one of the leading website development companies,
-                assures user-friendly websites that prioritize performance and
-                provide a set of tools to enhance one's lifestyle. We have the
-                ability to transform unexplored ideas into fully functional
-                websites!
-              </p>
-            </div>
-          </div>
-          <div
-            class="process__main position-relative d-flex align-items-start justify-content-between py-5"
-          >
-            <div class="process__wrap text-center">
-              <div class="process__wrapper">
-                <div class="process__img">
-                  <figure>
-                    <!-- <img
-											src="./img/analysis-img.png"
+								<img
+									src="img/faq1.webp"
+									id="dynamicImage"
+									class="img-fluid"
+									alt=""
+								/>
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="ai-solution-sec">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-md-6">
+						<div class="ai-solution-col-wrapper">
+							<div class="ai-solution-heading-wrapper">
+								<h3>
+									Didn’t Find What You Need? Let’s Talk AI Solutions for Your
+									Business
+								</h3>
+							</div>
+							<div class="ai-content-wrapper">
+								<p class="text-white">
+									Our experts will guide you on how AI can remove repetitive
+									work, improve accuracy, and save resources. Get personalized
+									advice for your industry.
+								</p>
+							</div>
+							<div class="ai-solition-btn-wrapper">
+								<a href="tel:+971-0-000-0000" class="btn btn-orange text-white">
+									<span class="txt"> Request My Free AI Audit</span>
+									<i class="material-icons">arrow_forward_ios</i>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-1 d-lg-flex d-none"></div>
+					<div class="col-lg-6 col-md-6">
+						<div class="ai-sol-img-wrapper">
+							<figure>
+								<img src="img/solution-img.webp" class="img-fluid" alt="" />
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="process-section py-sm-5 py-3">
+			<div class="container">
+				<div class="process__main__wrapper">
+					<div
+						class="process__top__wrapper d-flex align-items-center justify-content-between"
+					>
+						<div class="process__heading">
+							<h2 class="top__heading text-dark text-capitalize">
+								AI automation <br />
+								process
+								<span class="gradient__color"> Flow </span>
+							</h2>
+						</div>
+						<!-- <div class="process__desc">
+							<p class="long__desc desc__wrap">
+								Pacific, as one of the leading website development companies,
+								assures user-friendly websites that prioritize performance and
+								provide a set of tools to enhance one's lifestyle. We have the
+								ability to transform unexplored ideas into fully functional
+								websites!
+							</p>
+						</div> -->
+					</div>
+					<div
+						class="process__main position-relative d-flex align-items-start justify-content-between py-5"
+					>
+						<div class="process__wrap text-center">
+							<div class="process__wrapper">
+								<div class="process__img ps-lg-3">
+									<figure>
+										<!-- <img
+											src="./img/analysis-img.webp"
 											alt=""
 											class="img-fluid"
 										/> -->
-                    <img src="./img/process1.png" alt="" class="img-fluid" />
-                  </figure>
-                </div>
-                <div class="process__content">
-                  <h5 class="process__subheading text-dark">
-                    Discovery <br />
-                    call
-                  </h5>
-                  <p class="short__desc desc__wrap">
-                    We understand your goals, challenges, and what success looks
-                    like for your business.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="process__wrap text-center">
-              <div class="process__wrapper">
-                <div class="process__img">
-                  <figure>
-                    <img src="./img/process2.png" alt="" class="img-fluid" />
-                  </figure>
-                </div>
-                <div class="process__content">
-                  <h5 class="process__subheading text-dark">
-                    Business <br />
-                    information
-                  </h5>
-                  <p class="short__desc desc__wrap">
-                    Share workflows, tools, and team structure to help us assess
-                    your current operations.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="process__wrap text-center">
-              <div class="process__wrapper">
-                <div class="process__img">
-                  <figure>
-                    <img src="./img/process3.png" alt="" class="img-fluid" />
-                  </figure>
-                </div>
-                <div class="process__content">
-                  <h5 class="process__subheading text-dark">
-                    Audit <br />
-                    visit
-                  </h5>
-                  <p class="short__desc desc__wrap">
-                    Our experts analyze your processes firsthand to uncover
-                    inefficiencies and automation potential.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="process__wrap text-center">
-              <div class="process__wrapper">
-                <div class="process__img">
-                  <figure>
-                    <img src="./img/process4.png" alt="" class="img-fluid" />
-                  </figure>
-                </div>
-                <div class="process__content">
-                  <h5 class="process__subheading text-dark">
-                    Technical <br />
-                    information
-                  </h5>
-                  <p class="short__desc desc__wrap">
-                    We dive into systems, integrations, and technical setups to
-                    identify automation-ready areas.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="process__wrap text-center">
-              <div class="process__wrapper">
-                <div class="process__img">
-                  <figure>
-                    <img src="./img/process5.png" alt="" class="img-fluid" />
-                  </figure>
-                </div>
-                <div class="process__content">
-                  <h5 class="process__subheading text-dark">
-                    Propose Solution
-                  </h5>
-                  <p class="short__desc desc__wrap">
-                    Receive a custom automation plan aligned with your business
-                    goals and tech environment.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="full-access-sec pt-0">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 pt-5">
-            <div class="full-access-content-wrapper">
-              <div class="full-access-heading-wrapper">
-                <h2>
-                  Get Full Access to Our
-                  <span class="gradient-text">AI Automation</span> Launch
-                  Package
-                </h2>
-              </div>
-              <div class="full-access-para-wrapper">
-                <p class="text-white">
-                  Ideal for startups and scaling businesses, this bundle
-                  delivers a complete audit of your digital operations with an
-                  AI-powered roadmap to cut manual work and speed up execution.
-                </p>
-              </div>
-              <div class="full-access-list-wrapper">
-                <div class="full-access-name-wrapper">
-                  <h5 class="text-info">AI Automation Audit</h5>
-                </div>
-                <div class="list-wrapper">
-                  <ul class="list-unstyled text-white">
-                    <li>
-                      <i class="material-icons">check_circle_outline</i>
-                      <span class="txt"
-                        >Identify high-impact workflows ready for
-                        automation</span
-                      >
-                    </li>
-                    <li>
-                      <i class="material-icons">check_circle_outline</i>
-                      <span class="txt"
-                        >Map manual tasks across sales, marketing, support, and
-                        ops</span
-                      >
-                    </li>
-                    <li>
-                      <i class="material-icons">check_circle_outline</i>
-                      <span class="txt"
-                        >Evaluate tools and platforms used by your team</span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="full-access-list-wrapper">
-                <div class="full-access-name-wrapper">
-                  <h5 class="text-info">Process Recommendations</h5>
-                </div>
-                <div class="list-wrapper">
-                  <ul class="list-unstyled text-white">
-                    <li>
-                      <i class="material-icons">check_circle_outline</i>
-                      <span class="txt"
-                        >Match AI solutions to your business model</span
-                      >
-                    </li>
-                    <li>
-                      <i class="material-icons">check_circle_outline</i>
-                      <span class="txt"
-                        >Prioritize tasks based on effort vs value</span
-                      >
-                    </li>
-                    <li>
-                      <i class="material-icons">check_circle_outline</i>
-                      <span class="txt"
-                        >Evaluate tools and platforms used by your team</span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="full-access-list-wrapper">
-                <div class="full-access-name-wrapper">
-                  <h5 class="text-info">AI Readiness Score</h5>
-                </div>
-                <div class="list-wrapper">
-                  <ul class="list-unstyled text-white">
-                    <li>
-                      <i class="material-icons">check_circle_outline</i>
-                      <span class="txt"
-                        >Custom score to evaluate your current automation
-                        maturity</span
-                      >
-                    </li>
-                    <li>
-                      <i class="material-icons">check_circle_outline</i>
-                      <span class="txt">Benchmarked by industry</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="full-access-list-wrapper">
-                <div class="full-access-name-wrapper">
-                  <h5 class="text-info">Automation Blueprint</h5>
-                </div>
-                <div class="list-wrapper">
-                  <ul class="list-unstyled text-white">
-                    <li>
-                      <i class="material-icons">check_circle_outline</i>
-                      <span class="txt"
-                        >PDF report with step-by-step improvements</span
-                      >
-                    </li>
-                    <li>
-                      <i class="material-icons">check_circle_outline</i>
-                      <span class="txt">Tool stack recommendations</span>
-                    </li>
-                    <li>
-                      <i class="material-icons">check_circle_outline</i>
-                      <span class="txt">Cost and time-saving estimates</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="full-access-list-wrapper">
-                <div class="full-access-name-wrapper">
-                  <h5 class="text-info">Bonus Add-On</h5>
-                </div>
-                <div class="list-wrapper">
-                  <ul class="list-unstyled text-white">
-                    <li>
-                      <i class="material-icons">check_circle_outline</i>
-                      <span class="txt"
-                        >30-min strategy call with an automation expert</span
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="limited-txt-wrapper">
-              <h2 class="transparent-text-outline">Limited time offer</h2>
-            </div>
-            <div class="access-card-wrapper ms-5">
-              <div class="package-heading-wrapper my-3">
-                <h5>all in one package</h5>
-              </div>
-              <div class="package-main-heading-wrapper text-center">
-                <h2>Free AI Audit By <span class="big">AI Experts</span></h2>
-              </div>
-              <div class="package-price-wrapper text-center">
-                <h3>$0.00</h3>
-              </div>
-              <div class="package-price-wrapper text-center">
-                <p>"One Solution. Every Brand. Endless Possibilities.</p>
-              </div>
-              <div class="packge-btns-wrapper text-center pb-4">
-                <a href="#" class="btn btn-orange text-white">
-                  <span class="txt">Schedule a AI consultation call</span>
-                  <i class="material-icons">arrow_forward_ios</i>
-                </a>
-                <br />
-                <a href="#" class="btn btn-orange text-white mt-3">
-                  <span class="txt">Schedule a AI consultation call</span>
-                  <i class="material-icons">arrow_forward_ios</i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="book-sec">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-2"></div>
-          <div class="col-lg-8">
-            <div class="book-heading-wrapper text-center">
-              <h2>Book Your Free AI Automation Consultation</h2>
-              <p class="text-white">
-                Speak with our experts to review your workflows, uncover
-                automation opportunities, and get a custom action plan tailored
-                to your business.
-              </p>
-            </div>
-            <div
-              class="book-icon-wrapper d-flex gap-md-5 gap-3 align-items-sm-center justify-content-center"
-            >
-              <div
-                class="book-single-icon-wrapper d-flex gap-2 align-items-center"
-              >
-                <div class="icon-wrapper">
-                  <i class="material-icons text-white">add_comment</i>
-                </div>
-                <div class="icon-name-wrapper">
-                  <h6 class="text-white">
-                    Get Your Free AI <br />
-                    Audit Consultation
-                  </h6>
-                </div>
-              </div>
-              <!-- <div
+										<img src="./img/process1.webp" alt="" class="img-fluid" />
+									</figure>
+								</div>
+								<div class="process__content">
+									<h5 class="process__subheading text-dark">
+										Discovery <br />
+										call
+									</h5>
+									<p class="short__desc desc__wrap">
+										We understand your goals, challenges, and what success looks
+										like for your business.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="process__wrap text-center">
+							<div class="process__wrapper">
+								<div class="process__img ps-lg-3">
+									<figure>
+										<img src="./img/process2.webp" alt="" class="img-fluid" />
+									</figure>
+								</div>
+								<div class="process__content">
+									<h5 class="process__subheading text-dark">
+										Business <br />
+										information
+									</h5>
+									<p class="short__desc desc__wrap">
+										Share workflows, tools, and team structure to help us assess
+										your current operations.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="process__wrap text-center">
+							<div class="process__wrapper">
+								<div class="process__img ps-lg-3">
+									<figure>
+										<img src="./img/process3.webp" alt="" class="img-fluid" />
+									</figure>
+								</div>
+								<div class="process__content">
+									<h5 class="process__subheading text-dark">
+										Audit <br />
+										visit
+									</h5>
+									<p class="short__desc desc__wrap">
+										Our experts analyze your processes firsthand to uncover
+										inefficiencies and automation potential.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="process__wrap text-center">
+							<div class="process__wrapper">
+								<div class="process__img">
+									<figure>
+										<img src="./img/process4.webp" alt="" class="img-fluid" />
+									</figure>
+								</div>
+								<div class="process__content">
+									<h5 class="process__subheading text-dark">
+										Technical <br />
+										information
+									</h5>
+									<p class="short__desc desc__wrap">
+										We dive into systems, integrations, and technical setups to
+										identify automation-ready areas.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="process__wrap text-center">
+							<div class="process__wrapper">
+								<div class="process__img">
+									<figure>
+										<img src="./img/process5.webp" alt="" class="img-fluid" />
+									</figure>
+								</div>
+								<div class="process__content">
+									<h5 class="process__subheading text-dark">
+										Propose <br> Solution
+									</h5>
+									<p class="short__desc desc__wrap">
+										Receive a custom automation plan aligned with your business
+										goals and tech environment.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="full-access-sec pt-0">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 pt-5">
+						<div class="full-access-content-wrapper">
+							<div class="full-access-heading-wrapper">
+								<h2>
+									Get Full Access to Our
+									<span class="gradient-text">AI Automation</span> Launch
+									Package
+								</h2>
+							</div>
+							<div class="full-access-para-wrapper">
+								<p class="text-white">
+									Ideal for startups and scaling businesses, this bundle
+									delivers a complete audit of your digital operations with an
+									AI-powered roadmap to cut manual work and speed up execution.
+								</p>
+							</div>
+							<div class="full-access-list-wrapper">
+								<div class="full-access-name-wrapper">
+									<h5 class="text-info">AI Automation Audit</h5>
+								</div>
+								<div class="list-wrapper">
+									<ul class="list-unstyled text-white">
+										<li>
+											<i class="material-icons">check_circle_outline</i>
+											<span class="txt"
+												>Identify high-impact workflows ready for
+												automation</span
+											>
+										</li>
+										<li>
+											<i class="material-icons">check_circle_outline</i>
+											<span class="txt"
+												>Map manual tasks across sales, marketing, support, and
+												ops</span
+											>
+										</li>
+										<li>
+											<i class="material-icons">check_circle_outline</i>
+											<span class="txt"
+												>Evaluate tools and platforms used by your team</span
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="full-access-list-wrapper">
+								<div class="full-access-name-wrapper">
+									<h5 class="text-info">Process Recommendations</h5>
+								</div>
+								<div class="list-wrapper">
+									<ul class="list-unstyled text-white">
+										<li>
+											<i class="material-icons">check_circle_outline</i>
+											<span class="txt"
+												>Match AI solutions to your business model</span
+											>
+										</li>
+										<li>
+											<i class="material-icons">check_circle_outline</i>
+											<span class="txt"
+												>Prioritize tasks based on effort vs value</span
+											>
+										</li>
+										<li>
+											<i class="material-icons">check_circle_outline</i>
+											<span class="txt"
+												>Evaluate tools and platforms used by your team</span
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="full-access-list-wrapper">
+								<div class="full-access-name-wrapper">
+									<h5 class="text-info">AI Readiness Score</h5>
+								</div>
+								<div class="list-wrapper">
+									<ul class="list-unstyled text-white">
+										<li>
+											<i class="material-icons">check_circle_outline</i>
+											<span class="txt"
+												>Custom score to evaluate your current automation
+												maturity</span
+											>
+										</li>
+										<li>
+											<i class="material-icons">check_circle_outline</i>
+											<span class="txt">Benchmarked by industry</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="full-access-list-wrapper">
+								<div class="full-access-name-wrapper">
+									<h5 class="text-info">Automation Blueprint</h5>
+								</div>
+								<div class="list-wrapper">
+									<ul class="list-unstyled text-white">
+										<li>
+											<i class="material-icons">check_circle_outline</i>
+											<span class="txt"
+												>PDF report with step-by-step improvements</span
+											>
+										</li>
+										<li>
+											<i class="material-icons">check_circle_outline</i>
+											<span class="txt">Tool stack recommendations</span>
+										</li>
+										<li>
+											<i class="material-icons">check_circle_outline</i>
+											<span class="txt">Cost and time-saving estimates</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="full-access-list-wrapper">
+								<div class="full-access-name-wrapper">
+									<h5 class="text-info">Bonus Add-On</h5>
+								</div>
+								<div class="list-wrapper">
+									<ul class="list-unstyled text-white">
+										<li>
+											<i class="material-icons">check_circle_outline</i>
+											<span class="txt"
+												>30-min strategy call with an automation expert</span
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="limited-txt-wrapper">
+							<h2 class="transparent-text-outline">Limited time offer</h2>
+						</div>
+						<div class="access-card-wrapper ms-5">
+							<div class="package-heading-wrapper my-3">
+								<h5>all in one package</h5>
+							</div>
+							<div class="package-main-heading-wrapper text-center">
+								<h2>Free AI Audit By <span class="big">AI Experts</span></h2>
+							</div>
+							<div class="package-price-wrapper text-center">
+								<h3>$0.00</h3>
+							</div>
+							<div class="package-price-wrapper text-center">
+								<p>"One Solution. Every Brand. Endless Possibilities.</p>
+							</div>
+							<div class="packge-btns-wrapper text-center pb-4">
+								<a href="#" class="btn btn-orange text-white">
+									<span class="txt">Schedule a AI consultation call</span>
+									<i class="material-icons">arrow_forward_ios</i>
+								</a>
+								<br />
+								<a href="#" class="btn btn-orange text-white mt-3">
+									<span class="txt">Schedule a AI consultation call</span>
+									<i class="material-icons">arrow_forward_ios</i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="book-sec">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2"></div>
+					<div class="col-lg-8">
+						<div class="book-heading-wrapper text-center">
+							<h2>Book Your Free AI Automation Consultation</h2>
+							<p class="text-white">
+								Speak with our experts to review your workflows, uncover
+								automation opportunities, and get a custom action plan tailored
+								to your business.
+							</p>
+						</div>
+						<div
+							class="book-icon-wrapper d-flex gap-md-5 gap-3 align-items-sm-center justify-content-center"
+						>
+							<div
+								class="book-single-icon-wrapper d-flex gap-2 align-items-center"
+							>
+								<div class="icon-wrapper">
+									<i class="material-icons text-white">add_comment</i>
+								</div>
+								<div class="icon-name-wrapper">
+									<h6 class="text-white">
+										Get Your Free AI <br />
+										Audit Consultation
+									</h6>
+								</div>
+							</div>
+							<!-- <div
 								class="book-single-icon-wrapper d-flex gap-2 align-items-center"
 							>
 								<div class="icon-wrapper">
@@ -1027,260 +1027,259 @@
 									>
 								</div>
 							</div> -->
-              <div
-                class="book-single-icon-wrapper d-flex gap-2 align-items-center"
-              >
-                <div class="icon-wrapper">
-                  <i class="material-icons text-white">chat</i>
-                </div>
-                <div class="icon-name-wrapper">
-                  <h6 class="text-white">Start Live <br />CHAT NOW</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="footer-whole-wrapper position-relative">
-      <footer class="footer-sec">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-4">
-              <div class="footer-card-wrapper">
-                <div class="footer-heading-wrapper">
-                  <h2 class="upper-heading-wrapper">Ready for Some</h2>
-                  <div class="footer-arrow-img">
-                    <img
-                      src="img/footer-arrow-img.png"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <h2 class="lower-heading">Discussion?</h2>
-                </div>
-                <div class="footer-txt-wrapper">
-                  <p class="text-white mb-0">
-                    Our consultants are amazing people to talk to
-                  </p>
-                  <p class="text-white">They are cool and full of ideas.</p>
-                </div>
-                <div class="footer-contact-wrapper">
-                  <ul class="list-unstyled text-white">
-                    <li>
-                      <a href="tel:+971521946883" class="text-decoration-none"
-                        ><i class="material-icons">phone</i>
+							<div
+								class="book-single-icon-wrapper d-flex gap-2 align-items-center"
+							>
+								<div class="icon-wrapper">
+									<i class="material-icons text-white">chat</i>
+								</div>
+								<div class="icon-name-wrapper">
+									<h6 class="text-white">Start Live <br />CHAT NOW</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="footer-whole-wrapper position-relative">
+			<footer class="footer-sec">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3"></div>
+						<div class="col-lg-4">
+							<div class="footer-card-wrapper">
+								<div class="footer-heading-wrapper">
+									<h2 class="upper-heading-wrapper">Ready for Some</h2>
+									<div class="footer-arrow-img">
+										<img
+											src="img/footer-arrow-img.webp"
+											class="img-fluid"
+											alt=""
+										/>
+									</div>
+									<h2 class="lower-heading">Discussion?</h2>
+								</div>
+								<div class="footer-txt-wrapper">
+									<p class="text-white mb-0">
+										Our consultants are amazing people to talk to
+									</p>
+									<p class="text-white">They are cool and full of ideas.</p>
+								</div>
+								<div class="footer-contact-wrapper">
+									<ul class="list-unstyled text-white">
+										<li>
+											<a href="tel:+971521946883" class="text-decoration-none"
+												><i class="material-icons">phone</i>
 
-                        <h6>+971 5 2194 6883</h6></a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="mailto:queries@aihorizonllc.com"
-                        class="text-decoration-none"
-                        ><i class="material-icons">email</i>
+												<h6>+971 5 2194 6883</h6></a
+											>
+										</li>
+										<li>
+											<a
+												href="mailto:queries@aihorizonllc.com"
+												class="text-decoration-none"
+												><i class="material-icons">email</i>
 
-                        <h6>queries@aihorizonllc.com</h6></a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="footer-social-wrapper">
-                  <ul class="list-unstyled d-flex align-items-center gap-3">
-                    <li>
-                      <a href="https://facebook.com" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                      </a>
-                    </li>
+												<h6>queries@aihorizonllc.com</h6></a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="footer-social-wrapper">
+									<ul class="list-unstyled d-flex align-items-center gap-3">
+										<li>
+											<a href="https://facebook.com" target="_blank">
+												<i class="fab fa-facebook-f"></i>
+											</a>
+										</li>
+										<li>
+											<a href="https://twitter.com" target="_blank">
+												<i class="fab fa-twitter"></i>
+											</a>
+										</li>
 
-                    <li>
-                      <a href="https://linkedin.com" target="_blank">
-                        <i class="fab fa-linkedin-in"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5">
-              <div class="footer-form-wrapper p-4">
-                <div class="footer-form-heading-wrapper">
-                  <h2>Let’s Get Started</h2>
-                  <p class="text-white">
-                    Contact us by using the form below or send us an email.
-                  </p>
-                </div>
-                <form class="needs-validation" novalidate>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group position-relative has-validation">
-                        <input
-                          type="text"
-                          class="form-control pe-5"
-                          id="firstNameInput"
-                          placeholder="First Name"
-                          required
-                        />
-                        <span class="icon__span">
-                          <img src="./img/user.png" alt="" class="img-fluid" />
-                        </span>
-                        <div class="invalid-feedback">
-                          Please provide your First Name.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group position-relative has-validation">
-                        <input
-                          type="text"
-                          class="form-control pe-5"
-                          id="firstNameInput"
-                          placeholder="Last Name"
-                          required
-                        />
-                        <span class="icon__span">
-                          <img src="./img/user.png" alt="" class="img-fluid" />
-                        </span>
-                        <div class="invalid-feedback">
-                          Please provide your Last Name.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12 mb-md-0">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Company Name"
-                          id="companyName"
-                          required
-                        />
-                        <span class="icon__span">
-                          <img
-                            src="./img/company-icon.png"
-                            alt=""
-                            class="img-fluid"
-                          />
-                        </span>
-                        <div class="invalid-feedback">
-                          Please provide Company Name.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <!-- <input
+										<li>
+											<a href="https://linkedin.com" target="_blank">
+												<i class="fab fa-linkedin-in"></i>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="footer-form-wrapper p-4">
+								<div class="footer-form-heading-wrapper">
+									<h2>Let’s Get Started</h2>
+									<p class="text-white">
+										Contact us by using the form below or send us an email.
+									</p>
+								</div>
+								<form class="needs-validation" novalidate>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group position-relative has-validation">
+												<input
+													type="text"
+													class="form-control pe-5"
+													id="firstNameInput"
+													placeholder="First Name"
+													required
+												/>
+												<span class="icon__span">
+													<img src="./img/user.webp" alt="" class="img-fluid" />
+												</span>
+												<div class="invalid-feedback">
+													Please provide your First Name.
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group position-relative has-validation">
+												<input
+													type="text"
+													class="form-control pe-5"
+													id="firstNameInput"
+													placeholder="Last Name"
+													required
+												/>
+												<span class="icon__span">
+													<img src="./img/user.webp" alt="" class="img-fluid" />
+												</span>
+												<div class="invalid-feedback">
+													Please provide your Last Name.
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12 mb-md-0">
+											<div class="form-group">
+												<input
+													type="text"
+													class="form-control"
+													placeholder="Company Name"
+													id="companyName"
+													required
+												/>
+												<span class="icon__span">
+													<img
+														src="./img/company-icon.webp"
+														alt=""
+														class="img-fluid"
+													/>
+												</span>
+												<div class="invalid-feedback">
+													Please provide Company Name.
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<!-- <input
                           type="text"
                           class="form-control"
                           id="companySize"
                           placeholder="Company Size"
                           required
                         /> -->
-                        <select
-                          name=""
-                          class="form-control"
-                          id="companySize"
-                          required
-                        >
-                          <option value="Company Size" disabled selected>
-                            Company Size
-                          </option>
-                          <option value="">Less than 25</option>
-                          <option value="">25 - 50</option>
-                          <option value="">51-100</option>
-                          <option value="">101 - 500</option>
-                          <option value="">501 - 1000</option>
-                          <option value="">More than thousand</option>
-                        </select>
-                        <span class="icon__span">
-                          <img
-                            src="./img/workers-icon.png"
-                            alt=""
-                            class="img-fluid"
-                          />
-                        </span>
-                        <div class="invalid-feedback">
-                          Please provide Company Size.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <select
-                          name=""
-                          class="form-control"
-                          id="annualRevenue"
-                          required
-                        >
-                          <!-- <option value="Annual Revenue">Annual Revenue</option>
+												<select
+													name=""
+													class="form-control form-select"
+													id="companySize"
+													required
+												>
+													<option value="Company Size" disabled selected>
+														please select
+													</option>
+													<option value="">Less than 25</option>
+													<option value="">25 - 50</option>
+													<option value="">51-100</option>
+													<option value="">101 - 500</option>
+													<option value="">501 - 1000</option>
+													<option value="">More than thousand</option>
+												</select>
+												<span class="icon__span">
+													<img
+														src="./img/workers-icon.webp"
+														alt=""
+														class="img-fluid"
+													/>
+												</span>
+												<div class="invalid-feedback">
+													Please provide Company Size.
+												</div>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<select
+													name=""
+													class="form-control form-select"
+													id="annualRevenue"
+													required
+												>
+													<!-- <option value="Annual Revenue">Annual Revenue</option>
                           <option value=" $10K – $50K">$10K – $50K</option>
                           <option value=" $50K – $100K">$50K – $100K</option>
                           <option value=" $100K – $250K">$100K – $250K</option>
                           <option value="$250K – $500K">$250K – $500K</option>
                           <option value=" $500K – $1M">$500K – $1M</option>
                           <option value="$1M+">$1M+</option> -->
-                          <option value="Annual Revenue" disabled selected>
-                            Annual Revenue
-                          </option>
-                          <!-- <option value="">$0</option> -->
-                          <option value="">$10,000 - $50,000</option>
-                          <option value="">$50,000 - $100,000</option>
-                          <option value="">$100,000 - $250,000</option>
-                          <option value="">$250,000 - $500,000</option>
-                          <option value="">$500,000 - $1,000,000</option>
-                          <option value="">$1,000,000 - $5,000,000</option>
-                        </select>
-                        <span class="icon__span">
-                          <img
-                            src="./img/revenue-icon.png"
-                            alt=""
-                            class="img-fluid"
-                          />
-                        </span>
-                        <div class="invalid-feedback">
-                          Please provide your First Name.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group position-relative has-validation">
-                        <input
-                          type="text"
-                          class="form-control pe-5"
-                          id="emailAddress"
-                          placeholder="Email Address"
-                          required
-                        />
-                        <span class="icon__span">
-                          <img
-                            src="./img/email-icon.png"
-                            alt=""
-                            class="img-fluid"
-                          />
-                        </span>
-                        <div class="invalid-feedback">
-                          Please provide your Email Address.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="form-group position-relative has-validation">
-                        <label for="phone1" class="w-100">
-                          <!-- <span
+													<option value="Annual Revenue" disabled selected>
+														please select
+													</option>
+													<option value="">$10,000 - $50,000</option>
+													<option value="">$50,000 - $100,000</option>
+													<option value="">$100,000 - $250,000</option>
+													<option value="">$250,000 - $500,000</option>
+													<option value="">$500,000 - $1,000,000</option>
+													<option value="">$1,000,000 - $5,000,000</option>
+												</select>
+												<span class="icon__span">
+													<img
+														src="./img/revenue-icon.webp"
+														alt=""
+														class="img-fluid"
+													/>
+												</span>
+												<div class="invalid-feedback">
+													Please provide your First Name.
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group position-relative has-validation">
+												<input
+													type="text"
+													class="form-control pe-5"
+													id="emailAddress"
+													placeholder="Email Address"
+													required
+												/>
+												<span class="icon__span">
+													<img
+														src="./img/email-icon.webp"
+														alt=""
+														class="img-fluid"
+													/>
+												</span>
+												<div class="invalid-feedback">
+													Please provide your Email Address.
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group position-relative has-validation">
+												<label for="phone1" class="w-100">
+													<!-- <span
 													class="input-group-text bg-transparent border-0 form-control p-0"
 													id="basic-addon1"
 												>
@@ -1296,176 +1295,176 @@
 														required
 													/>
 												</span> -->
-                          <input
-                            type="tel"
-                            name="phone1"
-                            class="form-control w-100 phone-input"
-                            placeholder="+1 (555) 000-0000"
-                            required
-                          />
-                        </label>
-                        <div class="invalid-feedback">
-                          Please provide your Phone Number.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group mt-3">
-                    <div class="hero-form">
-                      <button
-                        type="submit"
-                        class="btn btn-orange d-flex align-items-center gap-2 justify-content-center"
-                      >
-                        <span class="txt">Let's get Started</span>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <div id="copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3"></div>
-            <div class="col-xl-6 col-lg-5 col-sm-6">
-              <div class="copyright-wrapper">
-                <p class="text-white mb-0">
-                  Copyright © 2025 AI HORIZON. All Rights Reserved.
-                </p>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6">
-              <div class="links-wrapper">
-                <ul class="list-unstyled text-white d-flex gap-5 mb-0">
-                  <li>
-                    <a href="#" class="text-decoration-none text-white"
-                      >Terms of Services</a
-                    >
-                  </li>
-                  <li>
-                    <a href="#" class="text-decoration-none text-white"
-                      >Privacy Policy</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="footer-img-wrapper">
+													<input
+														type="tel"
+														name="phone1"
+														class="form-control w-100 phone-input"
+														placeholder="+1 (555) 000-0000"
+														required
+													/>
+												</label>
+												<div class="invalid-feedback">
+													Please provide your Phone Number.
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group mt-3">
+										<div class="hero-form">
+											<button
+												type="submit"
+												class="btn btn-orange d-flex align-items-center gap-2 justify-content-center"
+											>
+												<span class="txt">Let's get Started</span>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div id="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3"></div>
+						<div class="col-xl-6 col-lg-5 col-sm-6">
+							<div class="copyright-wrapper">
+								<p class="text-white mb-0">
+									Copyright © 2025 AI HORIZON. All Rights Reserved.
+								</p>
+							</div>
+						</div>
+						<div class="col-xl-3 col-lg-4 col-sm-6">
+							<div class="links-wrapper">
+								<ul class="list-unstyled text-white d-flex gap-5 mb-0">
+									<li>
+										<a href="#" class="text-decoration-none text-white"
+											>Terms of Services</a
+										>
+									</li>
+									<li>
+										<a href="#" class="text-decoration-none text-white"
+											>Privacy Policy</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="footer-img-wrapper">
         <figure>
-          <img src="img/footer-img.png" class="img-fluid" alt="" />
+          <img src="img/footer-img.webp" class="img-fluid" alt="" />
         </figure>
       </div> -->
-    </div>
-  </body>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script
-    src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-    crossorigin="anonymous"
-  ></script>
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-  ></script>
-  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
-  <script src="js/index.js"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const imageElement = document.getElementById("dynamicImage");
+		</div>
+	</body>
+	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-3.7.1.min.js"
+		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+		crossorigin="anonymous"
+	></script>
+	<script
+		type="text/javascript"
+		src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+	></script>
+	<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const imageElement = document.getElementById("dynamicImage");
 
-      // Listen to collapse "shown" events
-      document.querySelectorAll(".accordion-collapse").forEach((collapse) => {
-        collapse.addEventListener("shown.bs.collapse", function () {
-          // Find the button that triggered this collapse
-          const button = document.querySelector(
-            `[data-bs-target="#${this.id}"]`
-          );
-          const imgSrc = button.getAttribute("data-img");
+			// Listen to collapse "shown" events
+			document.querySelectorAll(".accordion-collapse").forEach((collapse) => {
+				collapse.addEventListener("shown.bs.collapse", function () {
+					// Find the button that triggered this collapse
+					const button = document.querySelector(
+						`[data-bs-target="#${this.id}"]`,
+					);
+					const imgSrc = button.getAttribute("data-img");
 
-          if (imgSrc) {
-            imageElement.src = imgSrc;
-          }
-        });
-      });
-    });
-  </script>
+					if (imgSrc) {
+						imageElement.src = imgSrc;
+					}
+				});
+			});
+		});
+	</script>
 
-  <script>
-    // Wait for the page to fully load
-    window.addEventListener("load", () => {
-      const loader = document.querySelector(".loader-container");
-      const content = document.querySelector(".site-content");
+	<script>
+		// Wait for the page to fully load
+		window.addEventListener("load", () => {
+			const loader = document.querySelector(".loader-container");
+			const content = document.querySelector(".site-content");
 
-      // Hide loader and show content
-      loader.style.display = "none";
-      content.style.display = "block";
-    });
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-      "use strict";
+			// Hide loader and show content
+			loader.style.display = "none";
+			content.style.display = "block";
+		});
+		// Example starter JavaScript for disabling form submissions if there are invalid fields
+		(function () {
+			"use strict";
 
-      // Fetch all the forms we want to apply custom Bootstrap validation styles to
-      var forms = document.querySelectorAll(".needs-validation");
+			// Fetch all the forms we want to apply custom Bootstrap validation styles to
+			var forms = document.querySelectorAll(".needs-validation");
 
-      // Loop over them and prevent submission
-      Array.prototype.slice.call(forms).forEach(function (form) {
-        form.addEventListener(
-          "submit",
-          function (event) {
-            if (!form.checkValidity()) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
+			// Loop over them and prevent submission
+			Array.prototype.slice.call(forms).forEach(function (form) {
+				form.addEventListener(
+					"submit",
+					function (event) {
+						if (!form.checkValidity()) {
+							event.preventDefault();
+							event.stopPropagation();
+						}
 
-            form.classList.add("was-validated");
-          },
-          false
-        );
-      });
-    })();
+						form.classList.add("was-validated");
+					},
+					false,
+				);
+			});
+		})();
 
-    // const input = document.querySelector("#phone");
+		// const input = document.querySelector("#phone");
 
-    // const iti = window.intlTelInput(input, {
-    // 	initialCountry: "auto",
-    // 	geoIpLookup: function (success, failure) {
-    // 		fetch("https://ipinfo.io/json?token=YOUR_TOKEN_HERE", {
-    // 			headers: { Accept: "application/json" },
-    // 		})
-    // 			.then((resp) => resp.json())
-    // 			.then((resp) => success(resp.country))
-    // 			.catch(() => success("us"));
-    // 	},
-    // 	utilsScript:
-    // 		"https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
-    // });
+		// const iti = window.intlTelInput(input, {
+		// 	initialCountry: "auto",
+		// 	geoIpLookup: function (success, failure) {
+		// 		fetch("https://ipinfo.io/json?token=YOUR_TOKEN_HERE", {
+		// 			headers: { Accept: "application/json" },
+		// 		})
+		// 			.then((resp) => resp.json())
+		// 			.then((resp) => success(resp.country))
+		// 			.catch(() => success("us"));
+		// 	},
+		// 	utilsScript:
+		// 		"https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+		// });
 
-    const phoneInputs = document.querySelectorAll(".phone-input");
+		const phoneInputs = document.querySelectorAll(".phone-input");
 
-    phoneInputs.forEach((input) => {
-      const iti = window.intlTelInput(input, {
-        initialCountry: "ae",
-        nationalMode: false,
-        separateDialCode: false,
-        formatOnDisplay: true,
-        geoIpLookup: function (callback) {
-          fetch("https://ipinfo.io/json?token=YOUR_TOKEN_HERE", {
-            headers: { Accept: "application/json" },
-          })
-            .then((resp) => resp.json())
-            .then((resp) => callback(resp.country))
-            .catch(() => callback("us"));
-        },
-        utilsScript:
-          "https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
-      });
-      input._iti = iti;
-    });
-  </script>
+		phoneInputs.forEach((input) => {
+			const iti = window.intlTelInput(input, {
+				initialCountry: "ae",
+				nationalMode: false,
+				separateDialCode: false,
+				formatOnDisplay: true,
+				geoIpLookup: function (callback) {
+					fetch("https://ipinfo.io/json?token=YOUR_TOKEN_HERE", {
+						headers: { Accept: "application/json" },
+					})
+						.then((resp) => resp.json())
+						.then((resp) => callback(resp.country))
+						.catch(() => callback("us"));
+				},
+				utilsScript:
+					"https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js",
+			});
+			input._iti = iti;
+		});
+	</script>
 </html>
